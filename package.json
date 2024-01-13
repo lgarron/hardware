@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "lint": "npx @biomejs/biome check .",
+    "format": "npx @biomejs/biome format --write ."
+  }
+}
