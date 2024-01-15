@@ -14,3 +14,4 @@
 - 5.1cm × 4.15cm × 1.05cm
 - 4K@60Hz claimed
 - HDMI 2.0
+- HDCP
