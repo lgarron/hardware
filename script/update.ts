@@ -1,8 +1,8 @@
 import { cp, readFile, rename, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { Glob } from "bun";
+import { Glob, fileURLToPath } from "bun";
 
-const mainDir = new URL("../worktrees/main", import.meta.url).pathname;
+const mainDir = fileURLToPath(new URL("../worktrees/main", import.meta.url));
 
 await rm(mainDir, { recursive: true });
 await cp(
@@ -11,6 +11,7 @@ await cp(
   { recursive: true },
 );
 
+function translateSizedImageSyntax(s: string): string {
 function translateSizedImageSyntax(s: string): string {
   return s
     .replaceAll(
