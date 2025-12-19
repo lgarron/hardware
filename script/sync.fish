@@ -1,4 +1,4 @@
-#!/usr/bin/env -S fish --no-config
+#!/usr/bin/env -S fish --no-config --
 
 cd ./worktrees/main
 
